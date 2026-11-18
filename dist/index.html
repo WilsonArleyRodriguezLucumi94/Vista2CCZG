@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es-CO" data-palette="equilibrada">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prototipo de plataforma institucional, gestor de contenidos y solicitud de censo del Consejo Comunitario Zanjón de Garrapatero.">
+  <meta name="theme-color" content="#123f64">
+  <title>Consejo Comunitario Zanjón de Garrapatero | Portal institucional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Un territorio, muchas voces, una comunidad</span>
+      <span class="topbar__right"><span class="topbar__spark" aria-hidden="true"></span> Sitio institucional · Propuesta visual</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="inicio">
+    <div class="container site-header__inner">
+      <a href="#inicio" class="brand" aria-label="Consejo Comunitario Zanjón de Garrapatero, ir al inicio">
+        <span class="brand__symbol" aria-hidden="true"><img class="brand__logo" src="imagenes/logo.webp" alt="" width="55" height="55"></span>
+        <span class="brand__text"><strong>Consejo Comunitario</strong><span>Zanjón de Garrapatero</span></span>
+      </a>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="primaryNav" aria-label="Navegación principal">
+        <a href="#quienes-somos">El Consejo</a>
+        <a href="#organizacion">Organización</a>
+        <a href="#territorio">Territorio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#actualidad">Actualidad</a>
+        <a href="#contacto">Contacto</a>
+        <a class="nav__cta" href="#censo">Solicitar censo <span aria-hidden="true">↗</span></a>
+        <a class="nav__login" href="login.html">Iniciar sesión <span aria-hidden="true">→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span> Raíces, territorio y comunidad</span>
+          <h1 id="heroTitle">Nuestra historia nos une, <em>nuestro futuro</em> lo construimos juntos.</h1>
+          <p>Un espacio para compartir nuestra identidad, dar visibilidad al territorio y acercar la información comunitaria a todas las personas.</p>
+          <div class="hero__actions">
+            <a class="button button--yellow" href="#quienes-somos">Conoce el Consejo <span aria-hidden="true">↗</span></a>
+            <a class="button button--outline" href="#censo">Solicitud de censo <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero__note"><span class="hero__note-mark">✦</span><span>Identidad cultural · Participación · Información</span></div>
+        </div>
+        <!-- Escudo alternativo: oculto en el diseño compacto. -->
+        <div class="hero__visual" aria-hidden="true" hidden>
+          <svg class="landscape" viewBox="0 0 610 480" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <defs>
+              <clipPath id="artClip"><rect x="23" y="22" width="563" height="438" rx="116"/></clipPath>
+            </defs>
+            <g clip-path="url(#artClip)">
+              <rect x="23" y="22" width="563" height="438" fill="#ffffff"/>
+              <image href="imagenes/escudo.png" x="48" y="40" width="514" height="402" preserveAspectRatio="xMidYMid meet"/>
+            </g>
+            <rect x="24" y="23" width="561" height="436" rx="115" stroke="white" stroke-opacity=".36" stroke-width="2"/>
+          </svg>
+          <div class="visual-tag visual-tag--top"><span class="visual-tag__icon">✦</span><span><strong>Identidad y cultura</strong><small>Un espacio para nuestra voz</small></span></div>
+          <div class="visual-tag visual-tag--bottom"><span class="visual-tag__dot"></span> Construyendo comunidad</div>
+        </div>
+      </div>
+      <div class="hero__basewave" aria-hidden="true"></div>
+    </section>
+
+    <section class="palette-bar" aria-label="Variantes de paleta de colores">
+      <div class="container palette-bar__inner">
+        <div class="palette-bar__intro"><strong>Identidad visual</strong><span>Azul <b>60%</b> · Café <b>30%</b> · Amarillo <b>10%</b></span></div>
+        <div class="palette-bar__swatches" aria-hidden="true"><i class="swatch swatch--blue"></i><i class="swatch swatch--brown"></i><i class="swatch swatch--yellow"></i></div>
+        <div class="palette-picker"><span>Explorar degradados:</span><div class="palette-picker__buttons" role="group" aria-label="Variante cromática"><button type="button" class="palette-option is-active" data-palette-choice="equilibrada" aria-pressed="true">Original</button><button type="button" class="palette-option" data-palette-choice="suave" aria-pressed="false">Suave</button><button type="button" class="palette-option" data-palette-choice="profunda" aria-pressed="false">Profunda</button></div></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="quienes-somos" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section-heading section-heading--split">
+          <div><span class="eyebrow">Nuestra esencia</span><h2 id="aboutTitle">Un consejo, una historia<br><span class="text-brown">que sigue creciendo.</span></h2></div>
+          <p>Este portal dará a conocer la identidad y el trabajo de nuestro Consejo Comunitario. Los textos institucionales definitivos serán aprobados y publicados por sus responsables.</p>
+        </div>
+        <div class="about-grid">
+          <article class="feature-card feature-card--mission"><div class="feature-icon" aria-hidden="true">✺</div><span class="feature-card__number">01 / Institucional</span><h3>Quiénes somos</h3><p>Espacio para presentar la historia, los valores y la identidad del Consejo Comunitario Zanjón de Garrapatero.</p><span class="feature-card__line"></span></article>
+          <article class="feature-card feature-card--vision"><div class="feature-icon" aria-hidden="true">◎</div><span class="feature-card__number">02 / Propósito</span><h3>Misión</h3><p>Sección destinada a comunicar la misión institucional, pendiente de validación y publicación oficial.</p><span class="feature-card__line"></span></article>
+          <article class="feature-card feature-card--future"><div class="feature-icon" aria-hidden="true">↗</div><span class="feature-card__number">03 / Proyección</span><h3>Visión</h3><p>Espacio para proyectar la visión de futuro, los principios y las aspiraciones colectivas del Consejo.</p><span class="feature-card__line"></span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section organization-section" id="organizacion" aria-labelledby="organizationTitle">
+      <div class="container organization-grid">
+        <div class="organization-intro"><span class="eyebrow eyebrow--sand">Estructura comunitaria</span><h2 id="organizationTitle">Organizados para <span>avanzar juntos.</span></h2><p>La estructura institucional podrá actualizarse desde el gestor de contenidos. Los nombres y cargos se publicarán únicamente cuando sean confirmados y autorizados.</p><a class="inline-link" href="#actualidad">Ver información institucional <span aria-hidden="true">↗</span></a></div>
+        <div class="organization-list" aria-label="Áreas de la organización">
+          <div class="organization-item"><span class="organization-item__index">01</span><div><h3>Junta de Gobierno</h3><p>Gobierno y representación comunitaria</p></div><span class="organization-item__arrow" aria-hidden="true">↗</span></div>
+          <div class="organization-item"><span class="organization-item__index">02</span><div><h3>Representación legal</h3><p>Gestión y representación institucional</p></div><span class="organization-item__arrow" aria-hidden="true">↗</span></div>
+          <div class="organization-item"><span class="organization-item__index">03</span><div><h3>Presidentes de JAC</h3><p>Articulación y participación territorial</p></div><span class="organization-item__arrow" aria-hidden="true">↗</span></div>
+          <div class="organization-item"><span class="organization-item__index">04</span><div><h3>Guardia Cimarrona</h3><p>Coordinación y subcoordinación</p></div><span class="organization-item__arrow" aria-hidden="true">↗</span></div>
+          <div class="organization-item"><span class="organization-item__index">05</span><div><h3>Equipo administrativo y de campo</h3><p>Apoyo a procesos y proyectos comunitarios</p></div><span class="organization-item__arrow" aria-hidden="true">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section territory-section" id="territorio" aria-labelledby="territoryTitle">
+      <div class="container territory-grid">
+        <div class="territory-copy"><span class="eyebrow">Nuestro territorio</span><h2 id="territoryTitle">Un mapa para<br><span class="text-brown">reconocer lo nuestro.</span></h2><p>La plataforma podrá representar veredas, fincas, reservas, centros deportivos y otros lugares de interés para la comunidad.</p><div class="territory-types"><span>Veredas</span><span>Fincas</span><span>Reservas</span><span>Espacios comunitarios</span></div><div class="info-note"><span aria-hidden="true">ⓘ</span> Para activar el mapa real se necesitan límites, nombres y coordenadas validadas por el Consejo.</div></div>
+        <div class="map-demo" role="img" aria-label="Ilustración conceptual de un mapa territorial; no representa ubicaciones ni límites reales">
+          <div class="map-demo__header"><strong>Territorio y lugares de interés</strong><span>VISTA CONCEPTUAL</span></div>
+          <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><pattern id="mapDots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#afc7d7"/></pattern><linearGradient id="regionFill" x1="40" y1="0" x2="430" y2="350" gradientUnits="userSpaceOnUse"><stop stop-color="#e5d4be"/><stop offset="1" stop-color="#be9a74"/></linearGradient></defs><rect width="600" height="360" fill="#ecf5fa"/><rect width="600" height="360" fill="url(#mapDots)"/><path d="M120 86 211 41l74 31 96-20 87 56 22 92-64 51-34 65-105-24-59 27-89-37-58-83Z" fill="url(#regionFill)" stroke="#8f6a4d" stroke-width="2" stroke-dasharray="8 7"/><path d="m0 250 128-49 89 23 112-95 116 24 155-73" stroke="#90bfd8" stroke-width="16" stroke-linecap="round"/><path d="m0 250 128-49 89 23 112-95 116 24 155-73" stroke="#d8ecf7" stroke-width="7" stroke-linecap="round"/><path d="M120 86 211 41l74 31 96-20 87 56 22 92-64 51-34 65-105-24-59 27-89-37-58-83Z" stroke="#8f6a4d" stroke-width="2" stroke-dasharray="8 7"/><g fill="#164d74" stroke="white" stroke-width="5"><circle cx="212" cy="145" r="13"/><circle cx="347" cy="111" r="13"/><circle cx="299" cy="242" r="13"/></g><circle cx="396" cy="212" r="13" fill="#edbe4b" stroke="white" stroke-width="5"/><path d="m212 159-5 11m140-46-4 10m-44 121-4 12m101-42-4 12" stroke="#123f64" stroke-width="2"/><g fill="#164d74" font-family="Manrope,sans-serif" font-size="14" font-weight="800"><text x="179" y="125">Veredas</text><text x="354" y="90">Reservas</text><text x="256" y="286">Fincas</text><text x="404" y="250">Espacios</text></g></svg>
+          <div class="map-demo__footer"><span><i class="map-dot map-dot--blue"></i> Categorías por ubicar</span><span><i class="map-dot map-dot--yellow"></i> Referencia visual</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="proyectos" aria-labelledby="projectsTitle">
+      <div class="container"><div class="section-heading section-heading--split"><div><span class="eyebrow">Proyectos e iniciativas</span><h2 id="projectsTitle">Ideas que fortalecen<br><span class="text-brown">el territorio.</span></h2></div><p>La sección permitirá organizar los proyectos del Consejo. Las siguientes tarjetas son categorías ilustrativas, no proyectos anunciados.</p></div>
+        <div class="projects-grid"><article class="project-card project-card--one"><span class="project-card__icon" aria-hidden="true">◈</span><div><span class="project-card__label">Categoría de ejemplo</span><h3>Territorio y desarrollo</h3><p>Espacio para publicar iniciativas territoriales y comunitarias.</p></div></article><article class="project-card project-card--two"><span class="project-card__icon" aria-hidden="true">✳</span><div><span class="project-card__label">Categoría de ejemplo</span><h3>Cultura e identidad</h3><p>Espacio para divulgar procesos culturales y de memoria colectiva.</p></div></article><article class="project-card project-card--three"><span class="project-card__icon" aria-hidden="true">↗</span><div><span class="project-card__label">Categoría de ejemplo</span><h3>Participación comunitaria</h3><p>Espacio para mostrar acciones de participación y organización.</p></div></article></div>
+      </div>
+    </section>
+
+    <section class="section updates-section" id="actualidad" aria-labelledby="updatesTitle">
+      <div class="container"><div class="section-heading section-heading--split"><div><span class="eyebrow">Actualidad del Consejo</span><h2 id="updatesTitle">La comunidad<br><span class="text-brown">está informada.</span></h2></div><div class="updates-intro"><p>Noticias, eventos y comunicados desde un único espacio administrable.</p><a class="button button--brown button--small" href="login.html">Administrar contenidos <span aria-hidden="true">↗</span></a></div></div>
+        <div class="content-tabs" role="tablist" aria-label="Filtrar publicaciones"><button type="button" role="tab" id="tabTodas" aria-selected="true" aria-controls="publicationPanel" class="content-tab is-active" data-filter="todas">Todas</button><button type="button" role="tab" id="tabNoticias" aria-selected="false" aria-controls="publicationPanel" class="content-tab" data-filter="noticia">Noticias</button><button type="button" role="tab" id="tabEventos" aria-selected="false" aria-controls="publicationPanel" class="content-tab" data-filter="evento">Eventos</button><button type="button" role="tab" id="tabComunicados" aria-selected="false" aria-controls="publicationPanel" class="content-tab" data-filter="comunicado">Comunicados</button></div>
+        <div id="publicationPanel" class="publication-grid" role="tabpanel" aria-labelledby="tabTodas" aria-live="polite"></div>
+        <p class="updates-footnote">Los contenidos de ejemplo se identifican como demostración. Las publicaciones que agregues desde el panel se guardan únicamente en este navegador.</p>
+      </div>
+    </section>
+
+    <section class="census-banner" aria-labelledby="censusBannerTitle"><div class="container census-banner__inner"><span class="census-banner__symbol" aria-hidden="true">✳</span><div><span class="eyebrow eyebrow--light">Caracterización comunitaria</span><h2 id="censusBannerTitle">Cada persona hace parte de nuestra historia.</h2><p>Un sistema pensado para facilitar la solicitud de inscripción, la organización del censo y la consulta autorizada de la información comunitaria.</p></div><a class="button button--yellow" href="#censo">Ir al formulario <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="section census-section" id="censo" aria-labelledby="censusTitle"><div class="container census-layout"><div class="census-intro"><span class="eyebrow">Solicitud de inscripción</span><h2 id="censusTitle">Censo <span class="text-brown">comunitario.</span></h2><p>Este es el diseño inicial del formulario de caracterización. En la plataforma definitiva, los registros deberán pasar por un proceso de validación y aprobación.</p><div class="demo-warning"><strong>Prototipo sin envío de datos</strong><p>Usa solo información ficticia. Los campos y archivos de este formulario <strong>no se envían ni se guardan</strong>. Se requiere un servidor Laravel, una base de datos y una política de privacidad aprobada antes de habilitar el censo real.</p></div><ul class="census-benefits"><li>Registro ordenado por secciones</li><li>Campos y documentos por validar</li><li>Control de acceso en la versión final</li></ul></div>
+      <div class="form-card"><div class="form-card__head"><div><span class="form-card__overline">FORMULARIO DE DEMOSTRACIÓN</span><h3>Solicitud de censo</h3></div><span id="stepIndicator" class="step-count">01 / 03</span></div><div class="progress-track" aria-hidden="true"><span id="formProgress" style="width:33.33%"></span></div>
+        <form id="censusForm" novalidate>
+          <fieldset class="form-step is-active" data-step="0"><legend>Información personal</legend><p class="form-step__subtitle">Comienza con los datos básicos de la persona solicitante.</p><div class="form-grid"><label class="field">Nombres <span>*</span><input type="text" name="nombres" autocomplete="off" required maxlength="80" placeholder="Ej.: Nombre de prueba"></label><label class="field">Apellidos <span>*</span><input type="text" name="apellidos" autocomplete="off" required maxlength="80" placeholder="Ej.: Apellido de prueba"></label><label class="field">Tipo de documento <span>*</span><select name="tipoDocumento" required><option value="">Selecciona una opción</option><option>Tarjeta de identidad</option><option>Cédula de ciudadanía</option><option>Cédula de extranjería</option><option>Otro</option></select></label><label class="field">Número de documento <span>*</span><input type="text" name="numeroDocumento" required maxlength="24" minlength="4" autocomplete="off" placeholder="Número ficticio"></label><label class="field">Fecha de nacimiento<input type="date" name="fechaNacimiento" autocomplete="off"></label><label class="field">Sexo (opcional)<select name="sexo"><option value="">Selecciona una opción</option><option>Femenino</option><option>Masculino</option><option>Otro</option><option>Prefiero no responder</option></select></label></div></fieldset>
+          <fieldset class="form-step" data-step="1" hidden><legend>Residencia y contacto</legend><p class="form-step__subtitle">Información para organizar el censo por territorio.</p><div class="form-grid"><label class="field">Departamento de residencia <span>*</span><input type="text" name="departamento" required maxlength="80" placeholder="Departamento"></label><label class="field">Municipio de residencia <span>*</span><input type="text" name="municipio" required maxlength="80" placeholder="Municipio"></label><label class="field">Vereda de residencia <span>*</span><input type="text" name="vereda" required maxlength="100" placeholder="Vereda"></label><label class="field">Vereda de nacimiento<input type="text" name="veredaNacimiento" maxlength="100" placeholder="Vereda de origen"></label><label class="field">Celular<input type="tel" name="celular" autocomplete="off" maxlength="20" placeholder="Contacto opcional"></label><label class="field">Correo electrónico<input type="email" name="correo" autocomplete="off" maxlength="100" placeholder="correo@ejemplo.com"></label><label class="field field--wide">¿Pertenece a otro consejo comunitario o cabildo?<select name="pertenencia"><option value="">Selecciona una opción</option><option>Sí</option><option>No</option><option>Prefiero no responder</option></select></label></div></fieldset>
+          <fieldset class="form-step" data-step="2" hidden><legend>Caracterización y autorización</legend><p class="form-step__subtitle">Información complementaria y prueba de validación.</p><div class="form-grid"><label class="field">Nivel de escolaridad<select name="escolaridad"><option value="">Selecciona una opción</option><option>Sin escolaridad</option><option>Primaria</option><option>Secundaria</option><option>Técnica o tecnológica</option><option>Universitaria</option><option>Posgrado</option><option>Prefiero no responder</option></select></label><label class="field">Ocupación<input type="text" name="ocupacion" maxlength="100" placeholder="Actividad principal"></label><label class="field field--wide">Documento de identidad (solo prueba visual)<input type="file" name="archivo" accept=".pdf,.png,.jpg,.jpeg" aria-describedby="fileHint"><small id="fileHint">Archivo opcional. No se sube ni se almacena; evita utilizar documentos reales.</small></label><label class="field field--wide">Observaciones<textarea name="observaciones" maxlength="600" rows="3" placeholder="Comentarios opcionales"></textarea></label></div><label class="consent"><input type="checkbox" name="demoConsent" required><span>Confirmo que utilizaré únicamente datos ficticios para probar este prototipo. Entiendo que aquí no se realiza un censo oficial.</span></label><p class="privacy-hint">La versión final deberá mostrar la autorización de tratamiento de datos aprobada antes del envío.</p></fieldset>
+          <div class="form-message" id="formMessage" role="status" aria-live="polite" hidden></div><div class="form-actions"><button class="button button--ghost" type="button" id="prevStep" hidden>← Anterior</button><button class="button button--blue" type="button" id="nextStep">Continuar <span aria-hidden="true">→</span></button><button class="button button--blue" type="submit" id="submitCensus" hidden>Validar demostración <span aria-hidden="true">✓</span></button></div>
+        </form>
+      </div>
+    </div></section>
+
+    <section class="section contact-section" id="contacto" aria-labelledby="contactTitle"><div class="container contact-panel"><div><span class="eyebrow eyebrow--light">Conversemos</span><h2 id="contactTitle">Un espacio abierto<br>para nuestra comunidad.</h2><p>En la versión definitiva, aquí estarán los datos de contacto institucional, la ubicación oficial y los enlaces verificados a redes sociales.</p></div><div class="contact-panel__right"><div class="contact-card"><span class="contact-card__icon" aria-hidden="true">✉</span><div><strong>Contacto institucional</strong><span>Correos oficiales pendientes de activación y confirmación</span></div></div><div class="contact-card"><span class="contact-card__icon" aria-hidden="true">◎</span><div><strong>Redes sociales</strong><span>Enlaces oficiales pendientes de vinculación</span></div></div><a class="button button--yellow" href="#inicio">Volver al inicio <span aria-hidden="true">↑</span></a></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer__inner"><div class="footer__brand"><span class="footer__symbol" aria-hidden="true">✳</span><div><strong>Consejo Comunitario Zanjón de Garrapatero</strong><span>Identidad, organización y territorio.</span></div></div><p>Prototipo de diseño web institucional. Información y ubicaciones sujetas a validación por el Consejo.</p><span>© <span id="currentYear"></span> · Propuesta visual</span></div></footer>
+
+  <dialog id="cmsDialog" class="cms-dialog" aria-labelledby="cmsTitle"><div class="cms-modal"><div class="cms-modal__head"><div><span class="form-card__overline">GESTOR DE CONTENIDOS · DEMO LOCAL</span><h2 id="cmsTitle">Administrar publicaciones</h2></div><button type="button" class="icon-button" id="closeCms" aria-label="Cerrar gestor">×</button></div><p class="cms-modal__notice">Este panel es una simulación sin inicio de sesión. Solo guarda publicaciones de ejemplo en el almacenamiento de este navegador. No debe usarse para contenidos privados ni reemplaza un CMS seguro.</p>
+    <form id="cmsForm" class="cms-form"><input type="hidden" name="editId" id="editId"><div class="form-grid"><label class="field">Tipo de publicación <span>*</span><select name="tipo" required><option value="noticia">Noticia</option><option value="evento">Evento</option><option value="comunicado">Comunicado</option></select></label><label class="field">Fecha de publicación <span>*</span><input name="fecha" type="date" required></label><label class="field field--wide">Título <span>*</span><input type="text" name="titulo" required maxlength="90" placeholder="Título de la publicación de prueba"></label><label class="field field--wide">Descripción <span>*</span><textarea name="descripcion" required minlength="10" maxlength="360" rows="3" placeholder="Breve contenido de ejemplo"></textarea></label></div><div class="cms-form__actions"><button type="submit" class="button button--blue button--small" id="savePublication">Guardar publicación</button><button type="button" class="button button--ghost button--small" id="cancelEdit" hidden>Cancelar edición</button></div><p class="cms-status" id="cmsStatus" role="status" aria-live="polite"></p></form><div class="cms-list__header"><h3>Publicaciones creadas en este navegador</h3><button class="text-button" type="button" id="clearPublications">Borrar publicaciones de prueba</button></div><div id="cmsList" class="cms-list"></div></div></dialog>
+</body>
+</html>
